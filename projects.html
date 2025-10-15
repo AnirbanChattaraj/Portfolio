@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Anirban Chattaraj</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/project.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects-section">
+            <h1>My GitHub Projects</h1>
+            <p>Explore some of my work directly from my GitHub repositories.</p>
+
+            <div class="projects-container" id="projects">
+               
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Anirban Chattaraj. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const username = "AnirbanChattaraj";
+        const container = document.getElementById("projects");
+
+        fetch(`https://api.github.com/users/${username}/repos`)
+            .then(response => response.json())
+            .then(repos => {
+                repos.forEach(repo => {
+                    const card = document.createElement("div");
+                    card.className = "repo-card";
+                    card.innerHTML = `
+                        <h2>${repo.name}</h2>
+                        <p>${repo.description ? repo.description : "No description provided."}</p>
+                        <a href="${repo.html_url}" target="_blank">View on GitHub</a>
+                    `;
+                    container.appendChild(card);
+                });
+            })
+            .catch(error => {
+                container.innerHTML = "<p>Failed to load repositories. Please try again later.</p>";
+                console.error(error);
+            });
+    </script>
+</body>
+</html>

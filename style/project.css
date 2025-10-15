@@ -1,0 +1,124 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #1c1c1c;
+}
+
+
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0077b6;
+    transform: scale(1.05);
+}
+
+
+.projects-section {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.projects-section h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8rem;
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.projects-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #333333;
+}
+
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+
+.repo-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.repo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.repo-card h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0077b6;
+}
+
+.repo-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555555;
+}
+
+.repo-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0077b6;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.repo-card a:hover {
+    background-color: #005f8a;
+}
+
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 1rem;
+    color: #1c1c1c;
+    border-top: 1px solid #cccccc;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
