@@ -19,8 +19,7 @@ The portfolio is designed to be **clean, responsive, and visually appealing**, p
 
 ## 🌐 Live Demo
 
-Check out the live portfolio :[
-](https://anirbanchattaraj.github.io/Portfolio/)
+Check out the live portfolio :https://anirbanchattaraj.github.io/Portfolio/
 ---
 
 ## 🔗 GitHub Repository
