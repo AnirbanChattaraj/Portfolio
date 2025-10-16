@@ -4,6 +4,11 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #ffffff; /* white background */
     color: #1c1c1c; /* dark text for readability */
+    background-image: url("/style/profile-wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    
 }
 
 /* Header */
