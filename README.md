@@ -29,4 +29,6 @@ View the source code: [AnirbanChattaraj/Portfolio](https://github.com/AnirbanCha
 ---
 
 > This portfolio is a reflection of my dedication to **learning, creativity, and building meaningful projects**.
+>
+> With love
 > Author --> Anirban Chattaraj
